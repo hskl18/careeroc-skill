@@ -24,6 +24,7 @@ A missing completion record, interrupted publisher, or failed telemetry must not
 ## Inventory
 
 Fetch only the declared source registry and bounded scope.
+Budget each source family separately; one slow or deeply paginated family can otherwise use up a shared budget.
 Preserve raw observations, parser versions, source health, and complete/partial results.
 Validate the published snapshot's version, hash, and expected source families.
 If coverage is incomplete, publish only a clearly marked partial view when the configured pipeline permits it.
