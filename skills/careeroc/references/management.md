@@ -88,12 +88,6 @@ Record opening separately from application submission.
 Removing or consuming queue rows requires the user's authorization and verified archival of the exact records.
 Browser and shell-opening tools remain subject to the host's current restrictions.
 
-For explicitly requested duplicate job-tab cleanup, inspect current open tabs through the permitted UI tool rather than inferring them from browsing history.
-Group only official job tabs by canonical URL and full requisition identity, retain the oldest copy, and preserve distinct jobs, searches, dashboards, and unrelated tabs.
-Use stable tab IDs and verify the remaining tabs after authorized changes.
-Match domains by parsed hostname, including intended subdomains, rather than arbitrary URL substrings.
-Do not install browser integrations or modify browser profile files merely to perform ordinary tab operations.
-
 Archive only records with explicit applied confirmation.
 Upsert or reconcile the destination by stable identity before removing source rows.
 Read back the full destination record and re-read the source identity and user-owned fields immediately before removal.

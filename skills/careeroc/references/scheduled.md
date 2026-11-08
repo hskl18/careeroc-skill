@@ -1,13 +1,13 @@
 # Scheduled work
 
 The host supplies scheduling; this reference defines run responsibilities.
-Select one mode per invocation and read only its source/lane policy and relevant state.
+Select one mode per invocation and read only its source policy and relevant state.
 Do not create or alter a schedule as a side effect of using this skill.
 
 ## Boot and telemetry
 
 Use a stable run ID, an attempt ID, a UTC start time, and the profile, preference, policy, and source-registry versions.
-Check the selected control plane's audit, source freshness, resume-cache status, and policy drift before relying on cached decisions.
+Check the selected workspace's audit, source freshness, cached resume facts, and policy changes before relying on cached decisions.
 Reload changed authoritative rules and report policy drift.
 Reuse existing validated helpers instead of recreating pipeline mechanics in an agent prompt.
 
@@ -39,7 +39,7 @@ Use configured verification budgets and official ATS endpoints or permitted page
 Probe a failing access path once when useful rather than spending the entire budget on repeated empty pages.
 Preserve transient failures for retry without draining the whole backlog during discovery.
 Stage accepted assessments in one short owned write interval, then validate state.
-Discovery does not open or edit the user-facing workbook or claim delivery.
+Discovery does not edit the user's delivery destination or claim delivery.
 
 ## Retry
 
@@ -55,11 +55,11 @@ Release claims and locks on every exit path and report unresolved counts.
 
 Require authorized publication and a configured delivery or spreadsheet adapter.
 Prepare an immutable snapshot of pending decisions and check current annual history before reserving delivery.
-Avoid dependency loading when there is no work or the configured loader circuit is open.
+Skip loading the delivery adapter when there is no work or it has recently failed to load.
 Load the selected adapter with no root lock held and honor its bounded retry policy.
 Inspect the destination, preserve protected user fields, publish by stable identity, and verify complete record readback.
-For a workbook, preserve its native table, formatting, validation, and protected sheets through the configured artifact runtime.
-Do not substitute an unverified workbook library during a loader failure.
+For a spreadsheet, preserve its tables, formatting, validation, and protected sheets.
+If the configured adapter fails to load, stop instead of switching to an unverified substitute.
 Reconcile only verified publication; preserve pending records and acknowledgment-unknown results for recovery.
 Publication authorizes recommendation delivery, not employer submission.
 
@@ -68,7 +68,7 @@ Publication authorizes recommendation delivery, not employer submission.
 Read and validate the requested queue and its writer contract.
 If a required adapter cannot load, stop before mutation and report unavailable counts.
 Reconcile only source closure, explicit user outcomes, and history evidence supported by the current policy.
-Do not recreate retired private worksheets or restore discarded referrals.
+Do not recreate sheets or records the user removed.
 Repairs and row removal require their own authorization, stable-identity checks, backups, and readback.
 
 ## Market report
@@ -81,7 +81,7 @@ Reuse the configured reporting runtime and verify requested Markdown, images, or
 
 ## Efficiency report
 
-Summarize run statuses, blockers, verification failures, staging/delivery rates, duration, and lanes with missing telemetry.
+Summarize run statuses, blockers, verification failures, staging/delivery rates, duration, and runs with missing telemetry.
 Missing records are instrumentation gaps, not zero activity.
 Do not change cadence or broaden crawling from one weak run without the user's direction.
 

@@ -11,8 +11,8 @@ Compare each material requirement with verified resume evidence.
 Treat adjacent experience as adjacent rather than claiming unsupported expertise, production maturity, tools, scale, or years.
 Choose the best existing resume variant for the role's main work, not incidental keywords.
 Return its exact filename when available, including the closest variant for a skip verdict while making clear that it does not make the role advisable.
-If the file or version is missing, mark the choice unavailable instead of inventing a prefix or filename.
-Do not modify a resume repository as part of research.
+If the file or version is missing, mark the choice unavailable instead of inventing a filename.
+Do not edit resumes as part of research.
 
 Give a direct verdict, strongest matches, gaps, official dates, and the literal application link.
 An exact link the user supplied may be reviewed even if discovery history would otherwise suppress it.
