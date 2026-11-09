@@ -6,6 +6,10 @@ It is in beta.
 
 Website: https://www.careeroc.com
 
+![careeroc.com: the install command, what the skill checks, example questions for your agent, a fictional sample digest, and what needs your approval.](docs/media/site.png)
+
+*[careeroc.com](https://www.careeroc.com) on 2026-11-08. The sample digest is fictional.*
+
 ## Install
 
 ```sh
