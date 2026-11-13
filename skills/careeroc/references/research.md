@@ -54,7 +54,7 @@ Pick the example that fits what the question asks, such as work someone else sta
 
 An answer may claim less than the confirmed facts show, never more.
 Describe work by its real state, such as released, in review, proposed but not adopted, or investigated with no change, and never describe unfinished work as done.
-For a question about a failure or a change of plan, name one cause the user confirmed and what the candidate did next; state the candidate's own mistake plainly with "I", and describe another person's or team's part as a situation rather than their fault; if the user has not said, ask.
+For a question about a failure or a change of plan, name one cause the user confirmed and what the candidate did next; state the candidate's own mistake plainly with "I", and describe another person's or team's part as a situation rather than their fault; if the user has not said, ask; if the user confirms the cause is unknown or that they took no next step, say so plainly instead of supplying one.
 
 ### Plain words
 
