@@ -34,7 +34,7 @@ Each release is a tag listed under Releases, and `metadata.version` in `SKILL.md
 
 Copy [the example profile](skills/careeroc/assets/example-profile.md) outside the skill folder and replace it with your own facts.
 Put your own rules, such as whether your agent may fill in application forms, under "Rules for your agent" instead of editing the skill, so updates never overwrite them.
-[The example output](skills/careeroc/assets/example-output.md) shows what a single-role answer and a dry run look like.
+[The example output](skills/careeroc/assets/example-output.md) shows what a single-role answer, a dry run, and an application question look like.
 
 ## Ask your agent
 
