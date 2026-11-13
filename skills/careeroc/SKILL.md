@@ -3,7 +3,7 @@ name: careeroc
 description: Judge whether a job is worth applying to by checking the official posting against the user's resume and confirmed facts, pick the best existing resume version for a role, and draft answers to application questions. Also defines recurring job discovery and digests for users who supply their own scheduler and job-history storage. Use when the user asks whether to apply to a job, which resume fits a role, for help with application questions, for job research or company watchlists, or for scheduled job digests.
 license: MIT
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
   status: beta
 ---
 
@@ -28,7 +28,8 @@ Browser actions, private accounts, external writes, and deletion remain subject 
 
 ## Inputs and policy
 
-For one role, the user's resume or confirmed facts and the job link are enough; ask only for missing facts that decide eligibility.
+For a verdict on one role, the user's resume or confirmed facts and the job link are enough; ask only for missing facts that decide eligibility.
+Drafting application answers may need more, as [research](references/research.md) describes.
 Confirm facts that affect eligibility, including education dates, enrollment, experience, work authorization, location, and availability.
 Keep inferred facts and unresolved preferences explicit instead of converting them into hard filters.
 Checking the official posting needs web access; without it, mark the posting unverified instead of guessing.

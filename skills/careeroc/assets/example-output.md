@@ -35,3 +35,14 @@ Skipped after verification, 2 of 7 shown:
 
 - Kestrel AI, Senior Platform Engineer: asks for five years of experience
 - Lumen Robotics, Robotics Intern: internship, and the profile is not enrolled
+
+## Application question
+
+The Kestrel AI Backend Engineer, New Grad form asks: "Tell me about a time you worked in code someone else wrote."
+
+The profile confirms the summer 2025 backend internship and the capstone, but not work Alex did in someone else's code or what happened after, so the agent asks Alex before drafting:
+
+- Did you work in code you did not write, in the internship or the capstone? Whose code was it, what were you there to do, and what did you do, step by step?
+- Did your work ship, is it in review, was it not adopted, or did it end with no change? Is there a number or a reviewer's response you can confirm?
+
+It drafts once those answers are in, and leaves out any result Alex has not confirmed.
